@@ -2,24 +2,25 @@
 import styled from 'styled-components/native'
 
 // function
-export default function CarouselText({ children }) {
+export default function Title({ children, style }) {
   return (
-    <CarouselTextWrapper>
+    <TitletWrapper style={style}>
         {children}
-    </CarouselTextWrapper>
+    </TitletWrapper>
   )
 }
 
 // styles
-const CarouselTextWrapper = styled.Text`
+const TitletWrapper = styled.Text`
     max-width: 290px;
     height: 113px;
     flex-shrink: 0;
     
     color: #1F4598;
     font-family: BariolRegular;
-    font-size: 32px;
+    font-family: Bariol;
+    font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 37.184px;
-`
+    line-height: normal;
+  `

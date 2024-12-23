@@ -4,11 +4,8 @@ import { useFonts } from 'expo-font';
 
 import AppLoadingScreen from './src/screens/AppLoading'
 
-import CarouselText from './src/components/atoms/CarouselText/CarouselText';
-import CarouselImage from './src/components/atoms/CarouselImage/CarouselImage';
-import TestImg from './assets/images/FirstCarousel/FirstCarousel-1.png'
-
 import AppHeader from './src/components/organisms/AppHeader/AppHeader'
+import Card from './src/components/atoms/Card/Card';
 
 // function
 export default function App() {
@@ -32,10 +29,7 @@ export default function App() {
   return (
     <AppWrapper>
       <AppHeader/>
-      <CarouselImage source={TestImg}/>
-      <CarouselText>
-        Conheça nossa família de produtos Milnutri
-      </CarouselText>
+      <Card/>
     </AppWrapper>
   )
 }
