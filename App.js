@@ -1,11 +1,9 @@
 // imports
 import styled from 'styled-components/native'
 import { useFonts } from 'expo-font';
-
-import AppLoadingScreen from './src/screens/AppLoading'
-
-import AppHeader from './src/components/organisms/AppHeader/AppHeader'
-import Card from './src/components/atoms/Card/Card';
+  /* screens */
+  import AppLoadingScreen from './src/screens/AppLoading'
+  import AppHeader from './src/components/organisms/AppHeader/AppHeader'
 
 // function
 export default function App() {
@@ -26,10 +24,10 @@ export default function App() {
     return <AppLoadingScreen/>;
   }
   
+  // else, shows the home screen
   return (
     <AppWrapper>
       <AppHeader/>
-      <Card/>
     </AppWrapper>
   )
 }
