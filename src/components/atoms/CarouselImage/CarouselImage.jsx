@@ -16,4 +16,5 @@ const CarouselImageWrapper = styled.Image`
     width: 100%;
     height: 100%;
     flex-shrink: 0;
+    
 `
