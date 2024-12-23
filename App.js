@@ -3,6 +3,7 @@ import styled from 'styled-components/native'
 import { useFonts } from 'expo-font';
 
 import AppLoadingScreen from './src/screens/AppLoading'
+import CarouselText from './src/components/atoms/CarouselText/CarouselText';
 import AppHeader from './src/components/organisms/AppHeader/AppHeader'
 
 // function
@@ -21,17 +22,21 @@ export default function App() {
 
   // if fonts are not loaded, shows the loading app screen
   if (!fontsLoaded) {
-    return <AppLoadingScreen />;
+    return <AppLoadingScreen/>;
   }
   
   return (
     <AppWrapper>
       <AppHeader/>
+      <CarouselText>
+        Conheça nossa família de produtos Milnutri
+      </CarouselText>
     </AppWrapper>
   )
 }
 
 // styles
 const AppWrapper = styled.View`
+  flex: 1;
   color: #000;
 `

@@ -12,13 +12,14 @@ export default function CarouselText({ children }) {
 
 // styles
 const CarouselTextWrapper = styled.Text`
-    width: 228px;
+    max-width: 290px;
     height: 113px;
     flex-shrink: 0;
+    
     color: #1F4598;
-    font-family: Bariol;
+    font-family: BariolRegular;
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
-    line-height: 116.2%;
+    line-height: 37.184px;
 `
