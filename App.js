@@ -3,7 +3,9 @@ import styled from 'styled-components/native'
 import { useFonts } from 'expo-font';
   /* screens */
   import AppLoadingScreen from './src/screens/AppLoading'
+  
   import AppHeader from './src/components/organisms/AppHeader/AppHeader'
+  import MainCarousel from './src/components/organisms/MainCarousel/MainCarousel'
 
 // function
 export default function App() {
@@ -28,12 +30,12 @@ export default function App() {
   return (
     <AppWrapper>
       <AppHeader/>
+      <MainCarousel/>
     </AppWrapper>
   )
 }
 
 // styles
 const AppWrapper = styled.View`
-  flex: 1;
   color: #000;
 `

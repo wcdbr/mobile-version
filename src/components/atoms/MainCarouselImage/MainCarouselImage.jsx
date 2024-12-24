@@ -2,9 +2,9 @@
 import styled from 'styled-components/native'
 
 // function
-export default function CarouselImage({ source, style }) {
+export default function MainCarouselImage({ source, style }) {
   return (
-    <CarouselImageWrapper 
+    <MainCarouselImageWrapper 
       style={style}
       source={source} 
       resizeMode='cover' />
@@ -12,7 +12,7 @@ export default function CarouselImage({ source, style }) {
 }
 
 // styles
-const CarouselImageWrapper = styled.Image`
+const MainCarouselImageWrapper = styled.Image`
     width: 100%;
     height: 100%;
     flex-shrink: 0;
