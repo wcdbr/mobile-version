@@ -17,6 +17,4 @@ export default function DotIndicator({ data, currentIndex }) {
 // styles
 const DotIndicatorWrapper = styled.View`
   flex-direction: row;
-  justify-content: center;
-  margin-top: 10px;
 `;

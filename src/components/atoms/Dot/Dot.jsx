@@ -11,6 +11,7 @@ const DotWrapper = styled.View`
   width: 16px;
   height: 16px;
   border-radius: 100%;
-  margin: 0 5px;
+  margin: 0 10px;
+  align-self: center;
   background-color: ${({ active }) => (active ? '#02B1EB' : '#E4E4E4')};
 `;

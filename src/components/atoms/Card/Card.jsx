@@ -26,13 +26,5 @@ const CardWrapper = styled.View`
     
     padding: 7.5px;
     border-radius: 5px;
-
-    /* Sombra para iOS */
-    shadow-color: #000;
-    shadow-offset: { width: 0, height, 3 };
-    shadow-opacity: 0.1;
-    shadow-radius: 6px;
-
-    /* Sombra para Android */
-    elevation: 4;
+    border: 1px solid lightgray;
 `
