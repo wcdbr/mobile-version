@@ -3,6 +3,8 @@ import styled from 'styled-components/native';
 import React, { useState, useRef, useEffect } from 'react';
 import { FlatList, Dimensions } from 'react-native';
 
+import SectionTitle from '../../atoms/SectionTitle/SectionTitle';
+
 import { ProductsCarouselData } from '../../../data/ProductsCarouselData';
 import ProductsCarouselCard from '../../molecules/ProductsCarouselCard/ProductsCarouselCard';
 import DotIndicator from '../../molecules/DotIndicator/DotIndicator';
@@ -56,6 +58,9 @@ export default function ProductsCarousel() {
 
   return (
     <MainCarouselWrapper>
+    <SectionTitle>
+          Conheça nossas marcas Danone Nutrícia
+    </SectionTitle>
       {/* carousel */}
       <FlatList
         data={ProductsCarouselData}
@@ -94,7 +99,7 @@ export default function ProductsCarousel() {
         </CarouselArrowButtonWrapper>
       </CarouselControlsWrapper>
     </MainCarouselWrapper>
-  );
+  )
 }
 
 // styles
@@ -105,8 +110,8 @@ const MainCarouselWrapper = styled.View`
 `;
 
 const CarouselControlsWrapper = styled.View`
-  width: 90%;
-  margin-top: 24px;
+  width: 82%;
+  margin-top: 34px;
   justify-content: space-between;
   flex-direction: row;
 `;

@@ -31,6 +31,6 @@ const ProductsCarouselCardWrapper = styled.View`
 `;
 
 const CardRow = styled.View`
-  justify-content: space-evenly;
+  justify-content: space-around;
   flex-direction: row;
 `;

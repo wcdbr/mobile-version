@@ -12,7 +12,7 @@ export default function Title({ children, style }) {
 
 // styles
 const TitletWrapper = styled.Text`
-    max-width: 290px;
+    width: 300px;
     height: 113px;
     flex-shrink: 0;
     
