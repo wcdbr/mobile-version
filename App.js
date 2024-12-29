@@ -5,7 +5,7 @@ import { useFonts } from 'expo-font';
   import AppLoadingScreen from './src/screens/AppLoading'
   
   import AppHeader from './src/components/organisms/AppHeader/AppHeader'
-  import MainCarousel from './src/components/organisms/MainCarousel/MainCarousel'
+  import ProductsCarousel from './src/components/organisms/ProductsCarousel/ProductsCarousel'
 
 // function
 export default function App() {
@@ -23,14 +23,14 @@ export default function App() {
 
   // if fonts are not loaded, shows the loading app screen
   if (!fontsLoaded) {
-    return <AppLoadingScreen/>;
+    return <AppLoadingScreen />;
   }
   
   // else, shows the home screen
   return (
     <AppWrapper>
       <AppHeader/>
-      <MainCarousel/>
+      <ProductsCarousel/>
     </AppWrapper>
   )
 }
