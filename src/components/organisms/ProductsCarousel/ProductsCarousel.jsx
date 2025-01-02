@@ -3,7 +3,7 @@ import styled from 'styled-components/native';
 import React, { useState, useRef, useEffect } from 'react';
 import { FlatList, Dimensions } from 'react-native';
 
-import SectionTitle from '../../atoms/SectionTitle/SectionTitle';
+import ProductsCarouselTitle from '../../atoms/ProductsCarouselTitle/ProductsCarouselTitle';
 
 import { ProductsCarouselData } from '../../../data/ProductsCarouselData';
 import ProductsCarouselCard from '../../molecules/ProductsCarouselCard/ProductsCarouselCard';
@@ -58,9 +58,9 @@ export default function ProductsCarousel() {
 
   return (
     <MainCarouselWrapper>
-    <SectionTitle>
-          Conheça nossas marcas Danone Nutrícia
-    </SectionTitle>
+      <ProductsCarouselTitle>
+            Conheça nossas marcas Danone Nutrícia
+      </ProductsCarouselTitle>
       {/* carousel */}
       <FlatList
         data={ProductsCarouselData}
@@ -111,7 +111,7 @@ const MainCarouselWrapper = styled.View`
 
 const CarouselControlsWrapper = styled.View`
   width: 82%;
-  margin-top: 34px;
+  margin-top: 36px;
   justify-content: space-between;
   flex-direction: row;
 `;

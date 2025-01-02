@@ -5,7 +5,10 @@ import { useFonts } from 'expo-font';
   import AppLoadingScreen from './src/screens/AppLoading'
   
   import AppHeader from './src/components/organisms/AppHeader/AppHeader'
-  import ProductsCarousel from './src/components/organisms/ProductsCarousel/ProductsCarousel'
+
+  // testando coisas
+  import ProductsCarouselTitle from './src/components/atoms/ProductsCarouselTitle'
+  import Test from './assets/images/SecondaryCards/advantages.png'
 
 // function
 export default function App() {
@@ -30,7 +33,9 @@ export default function App() {
   return (
     <AppWrapper>
       <AppHeader/>
-      <ProductsCarousel/>
+      <AdvantagesCard cardImagePath={Test}>
+
+      </AdvantagesCard>
     </AppWrapper>
   )
 }
