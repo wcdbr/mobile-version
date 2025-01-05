@@ -3,12 +3,10 @@ import styled from 'styled-components/native'
 import { useFonts } from 'expo-font';
   /* screens */
   import AppLoadingScreen from './src/screens/AppLoading'
-  
-  import AppHeader from './src/components/organisms/AppHeader/AppHeader'
 
   // testando coisas
-  import ProductsCarouselTitle from './src/components/atoms/ProductsCarouselTitle'
-  import Test from './assets/images/SecondaryCards/advantages.png'
+  import AppHeader from './src/components/organisms/AppHeader/AppHeader'
+  import AdvantagesCard from './src/components/organisms/AdvantagesSection/AdvantagesSection';
 
 // function
 export default function App() {
@@ -33,9 +31,7 @@ export default function App() {
   return (
     <AppWrapper>
       <AppHeader/>
-      <AdvantagesCard cardImagePath={Test}>
-
-      </AdvantagesCard>
+      <AdvantagesCard/>
     </AppWrapper>
   )
 }
