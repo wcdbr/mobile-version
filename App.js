@@ -6,7 +6,6 @@ import { useFonts } from 'expo-font';
 
   // testando coisas
   import AppHeader from './src/components/organisms/AppHeader/AppHeader'
-  import NewsSection from './src/components/organisms/NewsSection/NewsSection';
 
 // function
 export default function App() {
@@ -31,7 +30,6 @@ export default function App() {
   return (
     <AppWrapper>
       <AppHeader/>
-      <NewsSection/>
     </AppWrapper>
   )
 }

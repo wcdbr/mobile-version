@@ -1,7 +1,7 @@
 export const AdvantageTotemsData = [
     {
         title: 'Descontos parceiros',
-        image: require('../../assets/images/Icons/discounts.png')
+        image: require('../../assets/images/Icons/signature.png')
     },
     {
         title: 'Plano de assinatura',
