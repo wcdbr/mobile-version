@@ -1,5 +1,6 @@
 // imports
 import styled from 'styled-components/native'
+
 import AdvantageTotem from '../AdvantageTotem/AdvantageTotem'
 import { AdvantageTotemsData } from '../../../data/AdvantageTotemsData'
 

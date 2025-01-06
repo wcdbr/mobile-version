@@ -13,12 +13,9 @@ export default function Title({ children, style }) {
 // styles
 const TitletWrapper = styled.Text`
     width: 300px;
-    height: 113px;
     flex-shrink: 0;
     
     color: #1F4598;
-    font-family: BariolRegular;
     font-family: Bariol;
     font-size: 24px;
-    font-weight: 400;
   `
