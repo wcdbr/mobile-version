@@ -1,36 +1,36 @@
 // imports
-import styled from 'styled-components/native';
-import React, { useState, useRef, useEffect } from 'react';
-import { FlatList, Dimensions } from 'react-native';
+import styled from 'styled-components/native'
+import React, { useState, useRef, useEffect } from 'react'
+import { FlatList, Dimensions } from 'react-native'
 
-import ProductsCarouselTitle from '../../atoms/ProductsCarouselTitle/ProductsCarouselTitle';
+import ProductsCarouselTitle from '../../atoms/ProductsCarouselTitle/ProductsCarouselTitle'
 
-import { ProductsCarouselData } from '../../../data/ProductsCarouselData';
-import ProductsCarouselCard from '../../molecules/ProductsCarouselCard/ProductsCarouselCard';
-import DotIndicator from '../../molecules/DotIndicator/DotIndicator';
-import CarouselArrowButton from '../../atoms/CarouselArrowButton/CarouselArrowButton';
+import { ProductsCarouselData } from '../../../data/ProductsCarouselData'
+import ProductsCarouselCard from '../../molecules/ProductsCarouselCard/ProductsCarouselCard'
+import DotIndicator from '../../molecules/DotIndicator/DotIndicator'
+import CarouselArrowButton from '../../atoms/CarouselArrowButton/CarouselArrowButton'
 
 // function
-const ScreenWidth = Dimensions.get('window').width;
+const ScreenWidth = Dimensions.get('window').width
 
 export default function ProductsCarousel() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const flatListRef = useRef(null);
+  const [currentIndex, setCurrentIndex] = useState(0)
+  const flatListRef = useRef(null)
 
   // updates the index while scrolling
   function handleScroll(event) {
-    const scrollPosition = event.nativeEvent.contentOffset.x;
-    const index = Math.round(scrollPosition / ScreenWidth);
-    setCurrentIndex(index);
+    const scrollPosition = event.nativeEvent.contentOffset.x
+    const index = Math.round(scrollPosition / ScreenWidth)
+    setCurrentIndex(index)
     
   }
 
   // scroll carousel to left
   function scrollLeft() {
     if (currentIndex > 0) {
-      const newIndex = currentIndex - 1;
-      flatListRef.current.scrollToIndex({ index: newIndex, animated: true });
-      setCurrentIndex(newIndex);
+      const newIndex = currentIndex - 1
+      flatListRef.current.scrollToIndex({ index: newIndex, animated: true })
+      setCurrentIndex(newIndex)
     }
   }
 
@@ -38,11 +38,11 @@ export default function ProductsCarousel() {
   function scrollRight() {
     if (currentIndex < ProductsCarouselData.length - 1) {
       const newIndex = currentIndex + 1;
-      flatListRef.current.scrollToIndex({ index: newIndex, animated: true });
+      flatListRef.current.scrollToIndex({ index: newIndex, animated: true })
       setCurrentIndex(newIndex);
     } else {
       // if on the last item, return to first
-      flatListRef.current.scrollToIndex({ index: 0, animated: true });
+      flatListRef.current.scrollToIndex({ index: 0, animated: true })
       setCurrentIndex(0);
     }
   }
@@ -53,11 +53,11 @@ export default function ProductsCarousel() {
       scrollRight();
     }, 6000); // change after 6 seconds
 
-    return () => clearInterval(interval);
+    return () => clearInterval(interval)
   }, [currentIndex]);
 
   return (
-    <MainCarouselWrapper>
+    <ProductsCarouselWrapper>
       <ProductsCarouselTitle>
             Conheça nossas marcas Danone Nutrícia
       </ProductsCarouselTitle>
@@ -98,22 +98,23 @@ export default function ProductsCarousel() {
           <CarouselArrowButton direction="right" onPress={scrollRight} />
         </CarouselArrowButtonWrapper>
       </CarouselControlsWrapper>
-    </MainCarouselWrapper>
+    </ProductsCarouselWrapper>
   )
 }
 
 // styles
-const MainCarouselWrapper = styled.View`
+const ProductsCarouselWrapper = styled.View`
   justify-content: center;
   align-items: center;
   width: 100%;
-`;
+  margin-bottom: 50px;
+`
 
 const CarouselControlsWrapper = styled.View`
   width: 82%;
   margin-top: 36px;
   justify-content: space-between;
   flex-direction: row;
-`;
+`
 
-const CarouselArrowButtonWrapper = styled.TouchableOpacity``;
+const CarouselArrowButtonWrapper = styled.TouchableOpacity``
