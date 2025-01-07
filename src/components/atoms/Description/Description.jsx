@@ -12,8 +12,7 @@ export default function Description({ children, className }) {
 
 // styles
 const DescriptionWrapper = styled.Text`
-  color: #333333;
-  font-family: Roboto;
+  color: #4c4c4c;
   font-size: 18px;
   line-height: 24px;
 `
