@@ -34,8 +34,9 @@ export default function NewsSection() {
 }
 
 // styles
-const FlatListWrapper = styled.FlatList``;
-
 const NewsCardWrapper = styled.View`
-    margin: 0 9px;
+    margin: 0 7px;
+    margin-bottom: 45px;
 `
+
+const FlatListWrapper = styled.FlatList``;

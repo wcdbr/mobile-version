@@ -2,21 +2,21 @@
 import styled from 'styled-components/native';
 import SectionTitle from '../../atoms/SectionTitle/SectionTitle';
 
-import { BenefitsCardData } from '../../../data/BenefitsCardData';
-import BenefitsCard from '../../molecules/BenefitsCard/BenefitsCard';
+import { TestimonialsCardsData } from '../../../data/TestimonialsCardsData';
+import TestimonialsCard from '../../molecules/TestimonialsCard/TestimonialsCard';
 
 // function
-export default function BenefitsSection() {
+export default function TestimonialsSection() {
   return (
     <>
       <SectionTitle>Lorem Ipsum sit amet</SectionTitle>
-      <BenefitsSectionWrapper>
+      <TestimonialsSectionWrapper>
         <FlatListWrapper
-          data={BenefitsCardData}
+          data={TestimonialsCardsData}
           keyExtractor={(item, index) => index.toString()}
           renderItem={({ item }) => (
             <BenefitsCardWrapper>
-              <BenefitsCard
+              <TestimonialsCard
                 image={item.image}
                 title={item.title}
                 subtitle={item.subtitle}
@@ -27,14 +27,15 @@ export default function BenefitsSection() {
           horizontal
           showsHorizontalScrollIndicator={false}
         />
-      </BenefitsSectionWrapper>
+      </TestimonialsSectionWrapper>
     </>
   );
 }
 
 // styles
-const BenefitsSectionWrapper = styled.View`
+const TestimonialsSectionWrapper = styled.View`
     padding-top: 40px;
+    margin-bottom: 20px;
 `;
 
 const FlatListWrapper = styled.FlatList`

@@ -16,4 +16,5 @@ export default function AppHeader() {
 // styles
 const AppHeaderWrapper = styled.View`
     gap: 6px;
+    margin-bottom: 25px;
 `

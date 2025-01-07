@@ -1,4 +1,4 @@
-export const BenefitsCardData = [
+export const TestimonialsCardsData = [
     {
         image: require('../../assets/images/SecondaryCards/Benefits/benefits1.png'),
         title: 'Lorem Ipsum 1',

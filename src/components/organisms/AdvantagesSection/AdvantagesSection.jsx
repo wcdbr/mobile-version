@@ -25,4 +25,6 @@ export default function AdvantagesSection() {
 }
 
 // styles
-const AdvantagesSectionWrapper = styled.View``
+const AdvantagesSectionWrapper = styled.View`
+  margin-bottom: 110px;
+`

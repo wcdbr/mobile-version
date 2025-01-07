@@ -3,9 +3,7 @@ import styled from 'styled-components/native'
 import { useFonts } from 'expo-font';
   /* screens */
   import AppLoadingScreen from './src/screens/AppLoading'
-
-  // testando coisas
-  import AppHeader from './src/components/organisms/AppHeader/AppHeader'
+  import HomeScreen from './src/screens/HomeScreen';
 
 // function
 export default function App() {
@@ -29,12 +27,10 @@ export default function App() {
   // else, shows the home screen
   return (
     <AppWrapper>
-      <AppHeader/>
+      <HomeScreen/>
     </AppWrapper>
   )
 }
 
 // styles
-const AppWrapper = styled.View`
-  color: #000;
-`
+const AppWrapper = styled.View``

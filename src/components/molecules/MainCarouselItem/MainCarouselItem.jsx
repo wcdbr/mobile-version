@@ -39,6 +39,6 @@ const CustomImage = styled(CarouselImage)`
 const CustomTitle = styled(Title)`
   position: absolute;
   z-index: 2;
-  bottom: 0;
-  left: 5%;
+  bottom: 35px;
+  left: 7%;
 `

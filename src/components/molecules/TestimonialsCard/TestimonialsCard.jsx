@@ -40,7 +40,7 @@ const TestimonialsCardWrapper = styled(ImageBackground)`
   width: 326px;
   height: 349px;
   border-radius: 5px;
-  margin: 0 10px;
+  margin: 0 3px;
 
   align-items: center;
   justify-content: center;

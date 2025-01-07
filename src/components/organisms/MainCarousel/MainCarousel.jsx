@@ -102,6 +102,7 @@ const MainCarouselWrapper = styled.View`
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-bottom: 45px;
 `;
 
 const CarouselControlsWrapper = styled.View`

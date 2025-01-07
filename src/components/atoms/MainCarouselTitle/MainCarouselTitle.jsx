@@ -13,12 +13,13 @@ export default function MainCarouselTitle({ children }) {
 
 // styles
 const MainCarouselTitleWrapper = styled(Title)`
-    font-size: 32px;
+    font-size: 22px;
     line-height: 33.184px;
 
     position: absolute;
     z-index: 1;
 
-    bottom: -2%;
+    bottom: -4%;
     left: 7%;
+    color: red;
 `
